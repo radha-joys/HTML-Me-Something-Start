@@ -1,1 +1,28 @@
 /* Write your CSS here! */
+header, main, footer{
+    text-align: center;
+}
+.contact-details{
+    p{
+        display: inline-block;
+    }
+    p:after{
+        content: "|";
+        padding: 0 5px;
+        font-weight: bold;
+    }
+}
+.duration{
+    display: inline-block;
+    
+    &::before{
+        content: "|";
+        padding: 0 5px;
+        font-weight: bold;
+    }
+}
+.education-details, .work-experience{
+    h4{
+        
+    }
+}
