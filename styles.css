@@ -1,14 +1,27 @@
 /* Write your CSS here! */
+body{
+    display: block;
+    font-family: Arial;
+    margin: 8px;
+}
 header, main, footer{
     text-align: center;
 }
-.contact-details{
-    p{
-        display: inline-block;
-    }
-    p:after{
+header h1, figcaption{
+    text-transform: uppercase;
+}
+ul{
+    list-style-position: inside;
+}
+#mainHeading{
+    font-size: 2rem;
+    color: red;
+}
+#testP{
+    display: inline-block;
+    &::after{
         content: "|";
-        padding: 0 5px;
+        padding: 0 0;
         font-weight: bold;
     }
 }
@@ -21,8 +34,7 @@ header, main, footer{
         font-weight: bold;
     }
 }
-.education-details, .work-experience{
-    h4{
-        
-    }
+.funParagraph{
+    font-size: 12px;
+    color: green;
 }
